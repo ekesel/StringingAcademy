@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+/* ---------nav-bar----------- */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5e096d;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.nav-bar .logo {
+    display: block;
+}
+
+.nav-bar .logo img {
+    width: 10rem;
+    cursor: pointer;
+    margin-right: 900px;
+}
+
+.nav-bar .menu a {
+    color: #ffc846;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-bar .menu a img {
+    width: 18px;
+    margin-bottom: -4px;
+}
+
+.nav-bar .menu .call {
+    background: #ffc846;
+    padding: 5px 5px;
+    border-radius: 50px;
+    margin-bottom: -7px;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 25px;
+}
+
+/* --------------hero------------- */
+
+
+.hero .hero-bg {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1000;
+    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    right: 50%;
+    transform: translate(50%, 0);
+    bottom: 1px;
+}
+
+.hero .form {
+    background-color: white;
+    width: 520px;
+    right: 0;
+    position: absolute;
+    z-index: 1008;
+    margin-top: -50rem;
+    padding: 30px 20px;
+    margin-right: 80rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero .form form {
+    display: inline-grid;
+}
+
+.hero .form form input {
+    width: 28rem;
+    margin-bottom: 25px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #adadadb0;
+}
+
+.hero .form form .book-class {
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: 1000;
+    background: linear-gradient(135deg, #ff8e32, #ff5263);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero .form .top {
+    font-size: 23px;
+    font-weight: 500;
+    color: #313131;
+    margin-bottom: 10px;
+}
+
+.hero .form .middle {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.hero .form .bottom {
+    font-size: 18px;
+    font-weight: 500;
+    color: #313131;
+    margin-bottom: 10px;
+}
+
+.hero .form form ion-icon {
+    margin-top: -50px;
+    margin-left: 26.5rem;
+    color: #616161b0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.hero .form .hr1 {
+    border: 1px solid #adadad49;
+    width: 8.5rem;
+    margin-left: 12px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.hero .form .hr2 {
+    border: 1px solid #adadad49;
+    width: 8.5rem;
+    margin-left: 20rem;
+    margin-top: -22px;
+    margin-bottom: 22px;
+}
+
+.hero .curves {
+    position: absolute;
+    z-index: 1008;
+    width: 101%;
+    margin-top: -77px;
+}
+
+/* -----------------section 2---------------- */
+
+.sec2 h2 {
+    text-align: center;
+    margin-top: 40px;
+    padding-left: 25rem;
+    padding-right: 25rem;
+}
+
+.sec2 .title {
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 26.5rem;
+    padding-right: 26.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* ---------------card3-------------- */
+
+.card-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------------card lkg------------ */
+
+.sec2 .card-lkg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 4rem;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: #75757571 0px 10px 20px 0px;
+    position: relative;
+    width: calc(100% / 2);
+    margin-right: 1.5rem;
+}
+
+
+.sec2 .card-lkg .lkg {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #5e70ff, #8b40ff);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+}
+
+.sec2 .card-lkg .img{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.sec2 .card-lkg .img img{
+    width: 17rem;
+    height: 10rem;
+
+}
+
+.sec2 .card-lkg .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -2rem;
+    margin-top: 3.5rem;
+}
+
+.sec2 .card-lkg .text img{
+    width: 8rem;
+    margin-top: -20px;
+}
+
+.sec2 .card-lkg .text p{
+    margin-top: 10px;
+    color: #313131;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 2.2rem;
+}
+
+.sec2 .card-lkg .text button{
+    padding: 15px 55px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #ff8e32, #ff5263);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-top: 2rem;
+}
+
+.sec2 .card-lkg .text button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* -----------------sec3-------------- */
+ 
+.sec3{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.sec3 h1{
+    font-size: 2.2rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sec3 .advantage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec3 .advantage {
+    text-align: center;
+    color: #333333;
+    font-size: 28px;
+}
+
+.sec3 .advantage .advantage-1 img{
+    width: 19rem; 
+    margin-bottom: 20px;
+}
+
+/* ---------------sec4----------------- */
+
+.sec4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec4 h1{
+    font-size: 2.2rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sec4 .rating, .parents-review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.sec4 .rating .download, .star-rating, .cities, .minutes{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+}
+
+.sec4 .rating .download img, .star-rating img, .cities img, .minutes img{
+    width: 2.8rem;
+}
+
+.sec4 .rating .download h2, .star-rating h2, .cities h2, .minutes h2{
+    color: purple;
+}
+
+.sec4 .rating .download p, .star-rating p, .cities p, .minutes p{
+    color: #333333;
+}
+
+.sec4 .parents-review .parent-1, .parent-2, .parent-3{
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5rem;
+}
+
+.sec4 .parents-review .parent-1 img, .parent-2 img, .parent-3 img{
+    width: 9rem;
+    cursor: pointer;
+}
+
+.sec4 .parents-review .parent-1 p, .parent-2 p, .parent-3 p{
+    font-size: 15px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+.sec4 .parents-review .parent-1 h4, .parent-2 h4, .parent-3 h4{
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sec4 .parents-review .parent-2{
+    margin-bottom: 18px;
+}
+
+.sec4 .parents-review .parent-1 .trianlge, .parent-2 .trianlge, .parent-3 .trianlge{
+    width: 3rem;
+    margin-left: -3.5rem;
+}
+
+.sec4 .parents-review .parent-1 .class-location, .parent-2 .class-location, .parent-3 .class-location{
+    font-size: 13.5px;
+}
+
+.sec4 .parents-review .arrow{
+    cursor: pointer;
+}
+
+.sec4 button{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(135deg, #5e70ff, #8b40ff);
+    color: white;
+    cursor: pointer;
+}
+
+.sec4 button ion-icon{
+    font-size: 20px;
+    font-weight: 1000;
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+
+/* ------------footer----------- */
+
+footer img{
+    z-index: 1008;
+    width: 100%;
+}
+
+footer .india-course{
+    background: #5e096d;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    padding-bottom: 20px;
+}
+
+footer .india-course .course, .exams-classes, .exam-resources, .company-follow, .free-textbook-solution, .state-boards{
+    display: inline-grid;
+    width: 17%;
+    min-height: 1px;
+}
+
+footer .india-course .course p, .exams-classes p, .exam-resources p, .company-follow p, .free-textbook-solution p, .state-boards p{
+    color: #ffc846;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer .india-course .course a, .exams-classes a, .exam-resources a, .company-follow a, .free-textbook-solution a, .state-boards a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+footer .india-course .course a:hover, .exams-classes a:hover, .exam-resources a:hover, .company-follow a:hover, .free-textbook-solution a:hover, .state-boards a:hover{
+    font-weight: 500;
+}
+
+footer .india-course .company-follow .follow{
+    display: flex;
+}
+
+footer .india-course .company-follow .follow img{
+    width: 30px;
+}
+footer hr{
+    height: 1px;
+    background: rgba(179, 179, 179, 0.582);
+    border: none;
+    width: 93%;
+    margin-left: 45px;
+}
+
+footer .bottom{
+    background: #5e096d;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3rem;
+    font-size: 13px;
+}
+
+footer .bottom .pages a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .bottom .pages ion-icon{
+    transform: rotate(90deg);
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+footer .bottom .copyright{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    /* CSS rules for smartphones in portrait orientation go here */
+    .nav-bar .logo img {
+        width: 4.5rem;
+        margin-right: 0px;
+    }
+    .hero .form {
+        width: 270px;
+        margin-top: -40rem;
+        padding: 20px 10px;
+        margin-right: 4rem;
+        border-radius: 20px;
+    }
+    .hero .form form input {
+        width: 15rem;
+    }
+    .hero .form .hr1 {
+        width: 2rem;
+    }
+    .hero .form .hr2 {
+        width: 2rem;
+        margin-left: 13rem;
+    }
+    .hero .curves {
+        width: 100%;
+        margin-top: -20px;
+    }
+    .sec2 h2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .sec2 .title {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .card-3 {
+        flex-direction: column;
+    }
+    .sec2 .card-lkg {
+        flex-direction: column;
+        margin-left: 2rem;
+        width: 90%;
+        margin-right: 1.5rem;
+    }
+    .sec2 .card-lkg .img {
+        margin-bottom: 0rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .sec2 .card-lkg .text {
+        margin-top: 1rem;
+    }
+    .sec2 .card-lkg .text button {
+        margin-left: 2rem;
+    }
+    .sec3 .advantage {
+        flex-direction: column;
+      }
+    .sec3 .advantage p{
+        font-size: medium;
+        margin-bottom: 2rem;
+    }
+    .sec4 .rating, .parents-review {
+        flex-direction: column;
+    }
+    .sec4 .rating .download, .star-rating, .cities, .minutes {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .sec4 .rating .download img {
+        width: 10rem;
+    }
+    .sec4 .rating .download p {
+        padding: 10px;
+    }
+    footer .india-course {
+        padding-left: 1rem;
+    }
+    footer .bottom {
+        padding: 1px 1rem;
+        font-size: 12px;
+      }
+    footer .bottom .copyright {
+    margin-top: 0px;
+    }
+  }
+  
+.carousel-container {
+display: flex;
+overflow-x: scroll;
+scroll-behavior: smooth;
+}
+
+.carousel-slide {
+display: flex;
+flex-direction: row;
+width: calc(33.33% - 10px);
+margin-right: 10px;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+/* CSS rules for smartphones in landscape orientation go here */
+    .hero .hero-bg {
+        height: 170vh;
+    }
+    .nav-bar .logo img {
+        width: 4.5rem;
+        margin-right: 200px;
+    }
+    .hero .form {
+        width: 600px;
+        margin-top: -40rem;
+        padding: 20px 10px;
+        margin-right: 4rem;
+        height: 500px;
+    }
+    .hero .form form input {
+        width: 34rem;
+    }
+    .hero .form .hr2 {
+        margin-left: 26rem;
+    }
+    .hero .curves {
+        width: 100%;
+        margin-top: -35px;
+    }
+    .sec2 h2 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .sec2 .title {
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .card-3 {
+        flex-direction: column;
+    }
+    .sec2 .card-lkg {
+        flex-direction: column;
+        margin-left: 2rem;
+        width: 90%;
+        margin-right: 1.5rem;
+    }
+    .sec2 .card-lkg .img {
+        margin-bottom: 0rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .sec2 .card-lkg .text {
+        margin-top: 1rem;
+    }
+    .sec2 .card-lkg .text button {
+        margin-left: 2rem;
+    }
+    .sec3 .advantage {
+        flex-direction: column;
+      }
+    .sec3 .advantage p{
+        font-size: medium;
+        margin-bottom: 2rem;
+    }
+    .sec4 .rating, .parents-review {
+        flex-direction: column;
+    }
+    .sec4 .rating .download, .star-rating, .cities, .minutes {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .sec4 .rating .download img {
+        width: 10rem;
+    }
+    .sec4 .rating .download p {
+        padding: 10px;
+    }
+    footer .india-course {
+        padding-left: 1rem;
+    }
+    footer .bottom {
+        padding: 1px 1rem;
+        font-size: 12px;
+      }
+    footer .bottom .copyright {
+    margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+/* CSS rules for tablets in portrait orientation go here */
+    .nav-bar .logo img {
+        width: 6rem;
+        margin-right: 250px;
+    }
+    .hero .form {
+        width: 500px;
+        margin-top: -50rem;
+        padding: 20px 10px;
+        margin-right: 10rem;
+        border-radius: 20px;
+    }
+    .hero .form form input {
+        width: 25rem;
+    }
+    .hero .form .hr1 {
+        width: 9rem;
+    }
+    .hero .form .hr2 {
+        width: 9rem;
+        margin-left: 20rem;
+    }
+    .hero .curves {
+        width: 100%;
+        margin-top: -35px;
+    }
+    .sec2 h2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .sec2 .title {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .card-3 {
+        flex-direction: column;
+    }
+    .sec2 .card-lkg {
+        flex-direction: column;
+        margin-left: 2rem;
+        width: 90%;
+        margin-right: 1.5rem;
+    }
+    .sec2 .card-lkg .img {
+        margin-bottom: 0rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .sec2 .card-lkg .text {
+        margin-top: 1rem;
+    }
+    .sec2 .card-lkg .text button {
+        margin-left: 2rem;
+    }
+    .sec3 .advantage {
+        flex-direction: column;
+    }
+    .sec3 .advantage p{
+        font-size: medium;
+        margin-bottom: 2rem;
+    }
+    .sec4 .rating, .parents-review {
+        flex-direction: column;
+    }
+    .sec4 .rating .download, .star-rating, .cities, .minutes {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .sec4 .rating .download img {
+        width: 10rem;
+    }
+    .sec4 .rating .download p {
+        padding: 10px;
+    }
+    footer .india-course {
+        padding-left: 1rem;
+    }
+    footer .bottom {
+        padding: 1px 1rem;
+        font-size: 12px;
+    }
+    footer .bottom .copyright {
+    margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
+/* CSS rules for tablets in landscape orientation go here */
+.nav-bar .logo img {
+    width: 8rem;
+    margin-right: 550px;
+}
+.hero .form {
+    width: 500px;
+    margin-top: -50rem;
+    padding: 20px 10px;
+    margin-right: 40rem;
+    border-radius: 20px;
+}
+.hero .form form input {
+    width: 25rem;
+}
+.hero .form .hr1 {
+    width: 9rem;
+}
+.hero .form .hr2 {
+    width: 9rem;
+    margin-left: 20rem;
+}
+.hero .curves {
+    width: 100%;
+    margin-top: -50px;
+}
+.sec2 h2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.sec2 .title {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.card-3 {
+    flex-direction: row;
+}
+.sec2 .card-lkg {
+    flex-direction: column;
+    margin-left: 2rem;
+    width: 90%;
+    margin-right: 1.5rem;
+}
+.sec2 .card-lkg .img {
+    margin-bottom: 0rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.sec2 .card-lkg .text {
+    margin-top: 1rem;
+}
+.sec2 .card-lkg .text button {
+    margin-left: 2rem;
+}
+.sec3 .advantage {
+    flex-direction: row;
+}
+.sec3 .advantage p{
+    font-size: medium;
+    margin-bottom: 2rem;
+}
+.sec4 .rating, .parents-review {
+    flex-direction: row;
+}
+.sec4 .rating .download, .star-rating, .cities, .minutes {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.sec4 .rating .download img {
+    width: 10rem;
+}
+.sec4 .rating .download p {
+    padding: 10px;
+}
+footer .india-course {
+    padding-left: 1rem;
+}
+footer .bottom {
+    padding: 1px 1rem;
+    font-size: 12px;
+}
+footer .bottom .copyright {
+margin-top: 0px;
+}
+}
