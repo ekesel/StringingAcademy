@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(^q$#9xi8*53e=u-ifa7zztgo%gmrdc=!j91#y5$zqy)bcl_wk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -127,14 +127,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ADMINS = (('ekesel', 'ekaansh.sahni@gmail.com'),)
+ADMINS = (('Stringing', 'stringingmusic2023@gmail.com'),)
 
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
-EMAIL_HOST = '' 
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST = 'smtp.gmail.com' 
+EMAIL_HOST_USER = 'stringingmusic2023@gmail.com'
+EMAIL_HOST_PASSWORD = 'njfhlorxqxmstqdu'
 EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'ekaansh <ekaanshsahni@gmail.com>'
+DEFAULT_FROM_EMAIL = 'Stringing <stringingmusic2023@gmail.com>'
 
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
 

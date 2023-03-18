@@ -11,11 +11,11 @@ def index(request):
 		try:
 		    lead = Leads.objects.create(name=request.POST['name'],phone=request.POST['phone'],email=request.POST['email'],query=request.POST['query'])
 		    params['response'] = 'success'
-		    # message = 'Please check lead, Name: '+ lead.name + ', phone:  '+lead.phone+', email: '+lead.email+', query: ' + lead.query
-		    # mail_admins(
-			# 	'New Lead Captured',
-			# 	message
-			# )
+		    message = 'Please check lead, Name: '+ lead.name + ', phone:  '+lead.phone+', email: '+lead.email+', query: ' + lead.query
+		    mail_admins(
+				'New Lead Captured',
+				message
+			)
 		except:
 			params['response'] = 'error'
 	banners = Banners.objects.filter(page_name='index_class')
@@ -52,21 +52,21 @@ def contact(request):
 			try:
 				lead = Leads.objects.create(name=request.POST['name'],phone=request.POST['phone'],email=request.POST['email'],query=request.POST['query'])
 				params['response'] = 'success'
-				# message = 'Please check lead, Name: '+ lead.name + ', phone:  '+lead.phone+', email: '+lead.email+', query: ' + lead.query
-				# mail_admins(
-				# 	'New Lead Captured',
-				# 	message
-				# )
+				message = 'Please check lead, Name: '+ lead.name + ', phone:  '+lead.phone+', email: '+lead.email+', query: ' + lead.query
+				mail_admins(
+					'New Lead Captured',
+					message
+				)
 			except:
 				params['response'] = 'error'
 		if 'contact_number' in request.POST:
 			try:
 				contact = Contact.objects.create(name=request.POST['contact_name'],phone=request.POST['contact_number'],email=request.POST['contact_email'],message=request.POST['contact_message'])
-				# message = 'Please check Enquiry, Name: '+ contact.name + ', phone:  '+contact.phone+', email: '+contact.email+', query: ' + contact.message
-				# mail_admins(
-				# 	'New Enquiry Captured',
-				# 	message
-				# )
+				message = 'Please check Enquiry, Name: '+ contact.name + ', phone:  '+contact.phone+', email: '+contact.email+', query: ' + contact.message
+				mail_admins(
+					'New Enquiry Captured',
+					message
+				)
 				params['contact_response'] = 'success'
 			except:
 				params['contact_response'] = 'error'
@@ -93,11 +93,11 @@ def about(request):
 		try:
 			lead = Leads.objects.create(name=request.POST['name'],phone=request.POST['phone'],email=request.POST['email'],query=request.POST['query'])
 			params['response'] = 'success'
-			# message = 'Please check lead, Name: '+ lead.name + ', phone:  '+lead.phone+', email: '+lead.email+', query: ' + lead.query
-			# mail_admins(
-			# 	'New Lead Captured',
-			# 	message
-			# )
+			message = 'Please check lead, Name: '+ lead.name + ', phone:  '+lead.phone+', email: '+lead.email+', query: ' + lead.query
+			mail_admins(
+				'New Lead Captured',
+				message
+			)
 		except:
 			params['response'] = 'error'
 	params['privacy_policy'] = config.PRIVACY_POLICY
