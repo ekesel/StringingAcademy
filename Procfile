@@ -1,0 +1,1 @@
+web: gunicorn stringing.wsgi --log-file -
