@@ -30,9 +30,9 @@ body {
 }
 
 .nav-bar .logo img {
-    width: 10rem;
+    width: 15rem;
     cursor: pointer;
-    margin-right: 900px;
+    margin-right: 1000px;
 }
 
 .nav-bar .menu a {
@@ -58,10 +58,10 @@ body {
     width: 25px;
 }
 
-/* --------------hero------------- */
+/* --------------heroo------------- */
 
 
-.hero .hero-bg {
+.heroo .heroo-bg {
     position: relative;
     width: 100%;
     object-fit: cover;
@@ -74,32 +74,32 @@ body {
     bottom: 1px;
 }
 
-.hero .form {
+.heroo .formm {
     background-color: white;
-    width: 520px;
+    width: 600px;
     right: 0;
     position: absolute;
     z-index: 1008;
-    margin-top: -50rem;
+    margin-top: -90rem;
     padding: 30px 20px;
-    margin-right: 80rem;
+    margin-right: 120rem;
     border-radius: 20px;
     text-align: center;
 }
 
-.hero .form form {
+.heroo .formm form {
     display: inline-grid;
 }
 
-.hero .form form input {
-    width: 28rem;
+.heroo .formm form input {
+    width: 50rem;
     margin-bottom: 25px;
     padding: 10px 10px;
     border-radius: 5px;
     border: 1px solid #adadadb0;
 }
 
-.hero .form form .book-class {
+.heroo .formm form .book-class {
     padding: 10px 10px;
     font-size: 25px;
     font-weight: 1000;
@@ -110,28 +110,28 @@ body {
     cursor: pointer;
 }
 
-.hero .form .top {
+.heroo .formm .top {
     font-size: 23px;
     font-weight: 500;
     color: #313131;
     margin-bottom: 10px;
 }
 
-.hero .form .middle {
+.heroo .formm .middle {
     font-size: 13px;
     font-weight: 400;
     color: #666666;
     margin-bottom: 10px;
 }
 
-.hero .form .bottom {
+.heroo .formm .bottom {
     font-size: 18px;
     font-weight: 500;
     color: #313131;
     margin-bottom: 10px;
 }
 
-.hero .form form ion-icon {
+.heroo .formm form ion-icon {
     margin-top: -50px;
     margin-left: 26.5rem;
     color: #616161b0;
@@ -139,23 +139,23 @@ body {
     cursor: pointer;
 }
 
-.hero .form .hr1 {
+.heroo .formm .hr1 {
     border: 1px solid #adadad49;
-    width: 8.5rem;
-    margin-left: 12px;
+    width: 12.5rem;
+    margin-left: 20px;
     margin-top: -20px;
     margin-bottom: 20px;
 }
 
-.hero .form .hr2 {
+.heroo .formm .hr2 {
     border: 1px solid #adadad49;
-    width: 8.5rem;
-    margin-left: 20rem;
+    width: 12.5rem;
+    margin-left: 40rem;
     margin-top: -22px;
     margin-bottom: 22px;
 }
 
-.hero .curves {
+.heroo .curves {
     position: absolute;
     z-index: 1008;
     width: 101%;
@@ -227,8 +227,8 @@ body {
 }
 
 .sec2 .card-lkg .img img{
-    width: 17rem;
-    height: 10rem;
+    width: 25rem;
+    height: 15rem;
 
 }
 
@@ -237,7 +237,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: -2rem;
     margin-top: 3.5rem;
 }
 
@@ -406,11 +405,21 @@ body {
     margin-left: 10px;
 }
 
+.carousel-box {
+    margin-top: 5rem;
+}
+
+.contact_resp {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 45px;
+    text-align: center;
+  }
 /* ------------footer----------- */
 
 footer img{
     z-index: 1008;
-    width: 100%;
+    width: 103%;
 }
 
 footer .india-course{
@@ -452,8 +461,9 @@ footer .india-course .company-follow .follow{
     display: flex;
 }
 
-footer .india-course .company-follow .follow img{
+footer .india-course .company-follow .follow a{
     width: 30px;
+    margin: 10px;
 }
 footer hr{
     height: 1px;
@@ -487,32 +497,302 @@ footer .bottom .copyright{
     margin-top: 10px;
 }
 
+/* carousel */
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    text-align:center;
+}
+/* indicator position */
+#quote-carousel .carousel-indicators {
+right: 50%;
+top: auto;
+bottom: -10px;
+margin-right: -19px;
+    color:#60dfe5;
+}
+/* indicator color */
+#quote-carousel .carousel-indicators li {
+background: #333333;
+    height:4px;
+width:50px;
+}
+/* active indicator */
+#quote-carousel .carousel-indicators .active {
+background: #60dfe5;
+height:4x;
+width:50px;
+margin-bottom:1px;
+}
+
+
+/*about */
+.about-title h1 {color: #535353; font-size:45px;font-weight:600;}
+.about-title span {color: #AF0808; font-size:45px;font-weight:700;}
+.about-title h3 {color: #535353; font-size:23px;margin-bottom:24px;}
+.about-title p {color: #7a7a7a;line-height: 1.8;margin: 0 0 15px;}
+.about-paddingB {padding-bottom: 50px;}
+
+.contact_info_container {
+    display: flex;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_info_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.buttons
+{
+    display: inline-block;
+    background: #ae71b3;
+    border-radius: 5px;
+    height: 48px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    color: #ae71b3;
+}
+.buttons a
+{
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #FFFFFF;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.buttons:hover
+{
+    opacity: 0.8;
+}
+
+.contact_info
+{
+    width: 100%;
+    padding-top: 70px;
+}
+.contact_info_item
+{
+    width: calc((100% - 60px) / 3);
+    height: 100px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    padding-left: 32px;
+    padding-right: 15px;
+}
+.contact_info_image
+{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+.contact_info_image img
+{
+    max-width: 100%;
+}
+.contact_info_content
+{
+    padding-left: 17px;
+}
+.contact_info_title
+{
+    font-weight: 500;
+}
+.contact_info_text
+{
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+}
+
+/*********************************
+4.1 Contact Form
+*********************************/
+
+.contact_form
+{
+    padding-top: 85px;
+}
+.contact_form_container
+{
+
+}
+.contact_form_title
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 37px;
+}
+.contact_form_inputs
+{
+    margin-bottom: 30px;
+}
+.input_field
+{
+    width: calc((100% - 60px) / 3);
+    height: 50px;
+    padding-left: 25px;
+    border: solid 1px #e5e5e5;
+    border-radius: 5px;
+    outline: none;
+    color: #ae71b3;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.input_field:focus,
+.text_field:focus
+{
+    border-color: #b2b2b2;
+}
+.input_field:hover,
+.text_field:hover
+{
+    border-color: #b2b2b2;
+}
+.input_field::-webkit-input-placeholder,
+.text_field::-webkit-input-placeholder
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.3);
+}
+.input_field:-moz-placeholder,
+.text_field:-moz-placeholder
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.3);
+}
+.input_field::-moz-placeholder,
+.text_field::-moz-placeholder
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.3);
+} 
+.input_field:-ms-input-placeholder,
+.text_field:-ms-input-placeholder
+{ 
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.3);
+}
+.input_field::input-placeholder,
+.text_field::input-placeholder
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.3);
+}
+.text_field
+{
+    width: 100%;
+    height: 160px;
+    padding-left: 25px;
+    padding-top: 15px;
+    border: solid 1px #e5e5e5;
+    border-radius: 5px;
+    color: #ae71b3;
+    outline: none;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.contact_submit_button
+{
+    padding-left: 35px;
+    padding-right: 35px;
+    color: #FFFFFF;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 24px;
+}
+.panel
+{
+    width: 100%;
+    height: 50px;
+    background: #fafafa;
+    margin-top: 120px;
+}
+
+.pricing-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card1 {
+    padding: 20px;
+}
+
+.pricing-header {
+    align-items: center;
+    text-align: center;
+}
+
+.pricing-header h4 {
+    font-size: 40px;
+}
+
+.card1:hover {
+    background:#ae71b3;
+    border:1px solid #00ffb6;
+}
+
+.card1:hover .list-group-item{
+background:#ae71b3 !important
+}
+
+
+.card:hover .btn-outline-dark{
+color:white;
+background:#212529;
+}
+
 @media only screen and (max-width: 480px) {
     /* CSS rules for smartphones in portrait orientation go here */
     .nav-bar .logo img {
         width: 4.5rem;
         margin-right: 0px;
     }
-    .hero .form {
-        width: 270px;
-        margin-top: -40rem;
+    .heroo .formm {
+        width: 290px;
+        margin-top: -70rem;
         padding: 20px 10px;
-        margin-right: 4rem;
+        margin-right: 6rem;
         border-radius: 20px;
     }
-    .hero .form form input {
-        width: 15rem;
+    .heroo .formm form input {
+        width: 25rem;
     }
-    .hero .form .hr1 {
+    .heroo .formm .hr1 {
         width: 2rem;
     }
-    .hero .form .hr2 {
+    .heroo .formm .hr2 {
         width: 2rem;
-        margin-left: 13rem;
+        margin-left: 23rem;
     }
-    .hero .curves {
-        width: 100%;
-        margin-top: -20px;
+    .heroo .curves {
+        width: 101%;
+        margin-top: -16px;
     }
     .sec2 h2 {
         padding-left: 2rem;
@@ -575,51 +855,52 @@ footer .bottom .copyright{
     footer .bottom .copyright {
     margin-top: 0px;
     }
+    #quote-carousel .carousel-indicators {
+    bottom: -40px;
+    }
+    #quote-carousel .carousel-indicators li {
+    height:5px;
+    width:5px;
+    }
+    #quote-carousel .carousel-indicators .active {
+    height:2x;
+    width:5px;
+    margin-bottom:0px;
+    }
+    footer .india-course .company-follow .follow a{
+        margin: 2px;
+    }
+    .contact_info_container {
+        flex-direction: column;
+    }
   }
-  
-.carousel-container {
-display: flex;
-overflow-x: scroll;
-scroll-behavior: smooth;
-}
-
-.carousel-slide {
-display: flex;
-flex-direction: row;
-width: calc(33.33% - 10px);
-margin-right: 10px;
-}
-
-.arrow-left {
-    transform: rotate(180deg);
-}
 
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 /* CSS rules for smartphones in landscape orientation go here */
-    .hero .hero-bg {
+    .heroo .heroo-bg {
         height: 170vh;
     }
     .nav-bar .logo img {
         width: 4.5rem;
         margin-right: 200px;
     }
-    .hero .form {
+    .heroo .formm {
         width: 600px;
-        margin-top: -40rem;
+        margin-top: -60rem;
         padding: 20px 10px;
-        margin-right: 4rem;
+        margin-right: 8rem;
         height: 500px;
     }
-    .hero .form form input {
+    .heroo .formm form input {
         width: 34rem;
     }
-    .hero .form .hr2 {
-        margin-left: 26rem;
+    .heroo .formm .hr2 {
+        margin-left: 46rem;
     }
-    .hero .curves {
+    .heroo .curves {
         width: 100%;
-        margin-top: -35px;
+        margin-top: -28px;
     }
     .sec2 h2 {
         padding-left: 5rem;
@@ -682,6 +963,18 @@ margin-right: 10px;
     footer .bottom .copyright {
     margin-top: 0px;
     }
+    #quote-carousel .carousel-indicators {
+        bottom: -40px;
+    }
+    #quote-carousel .carousel-indicators li {
+    height:5px;
+    width:5px;
+    }
+    #quote-carousel .carousel-indicators .active {
+    height:2x;
+    width:5px;
+    margin-bottom:0px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
@@ -690,24 +983,24 @@ margin-right: 10px;
         width: 6rem;
         margin-right: 250px;
     }
-    .hero .form {
+    .heroo .formm {
         width: 500px;
-        margin-top: -50rem;
+        margin-top: -90rem;
         padding: 20px 10px;
-        margin-right: 10rem;
+        margin-right: 20rem;
         border-radius: 20px;
     }
-    .hero .form form input {
-        width: 25rem;
+    .heroo .formm form input {
+        width: 40rem;
     }
-    .hero .form .hr1 {
+    .heroo .formm .hr1 {
         width: 9rem;
     }
-    .hero .form .hr2 {
+    .heroo .formm .hr2 {
         width: 9rem;
-        margin-left: 20rem;
+        margin-left: 36rem;
     }
-    .hero .curves {
+    .heroo .curves {
         width: 100%;
         margin-top: -35px;
     }
@@ -780,26 +1073,26 @@ margin-right: 10px;
     width: 8rem;
     margin-right: 550px;
 }
-.hero .form {
+.heroo .formm {
     width: 500px;
-    margin-top: -50rem;
+    margin-top: -70rem;
     padding: 20px 10px;
     margin-right: 40rem;
     border-radius: 20px;
 }
-.hero .form form input {
-    width: 25rem;
+.heroo .formm form input {
+    width: 45rem;
 }
-.hero .form .hr1 {
+.heroo .formm .hr1 {
     width: 9rem;
 }
-.hero .form .hr2 {
+.heroo .formm .hr2 {
     width: 9rem;
-    margin-left: 20rem;
+    margin-left: 37rem;
 }
-.hero .curves {
+.heroo .curves {
     width: 100%;
-    margin-top: -50px;
+    margin-top: -45px;
 }
 .sec2 h2 {
     padding-left: 2rem;

@@ -43,3 +43,29 @@ class Testimonials(models.Model):
 
 	def __str__(self):
 		return self.name
+
+class Contact(models.Model):
+	name = models.CharField(max_length=50,null=True,blank=True)
+	message = models.CharField(max_length=500,null=True,blank=True)
+	email = models.CharField(max_length=50,null=True,blank=True)
+	phone = models.CharField(max_length=50,null=True,blank=True)
+
+	def __str__(self):
+		return self.name
+	
+class Credit(models.Model):
+	user = models.OneToOneField(User,related_name='credit_user', on_delete=models.CASCADE)
+	points = models.IntegerField(default=0)
+
+	def __str__(self):
+		return self.user.username
+	
+class Course(models.Model):
+	name = models.CharField(max_length=50,null=True,blank=True)
+	price = models.CharField(max_length=100,null=True,blank=True)
+	desc = models.CharField(max_length=500,null=True,blank=True)
+	type = models.CharField(max_length=100,null=True,blank=True)
+	button_link = models.CharField(max_length=100,null=True,blank=True) 
+
+	def __str__(self):
+		return self.name
