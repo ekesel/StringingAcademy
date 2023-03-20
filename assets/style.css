@@ -1,28 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    max-width: 100vw;
+html {
     overflow-x: hidden;
 }
-
-
 
 /* ---------nav-bar----------- */
 
 .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #5e096d;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
+    padding-top: 20px;
 }
 
 .nav-bar .logo {
@@ -30,32 +21,23 @@ body {
 }
 
 .nav-bar .logo img {
-    width: 15rem;
+    width: 150px;
     cursor: pointer;
-    margin-right: 1000px;
 }
 
 .nav-bar .menu a {
     color: #ffc846;
     text-decoration: none;
-    margin-left: 10px;
     cursor: pointer;
     font-size: 14px;
 }
 
-.nav-bar .menu a img {
-    width: 18px;
-    margin-bottom: -4px;
-}
-
 .nav-bar .menu .call {
     background: #ffc846;
-    padding: 5px 5px;
     border-radius: 50px;
-    margin-bottom: -7px;
-    margin-left: 10px;
     cursor: pointer;
     width: 25px;
+    padding: 2px;
 }
 
 /* --------------heroo------------- */
@@ -63,28 +45,24 @@ body {
 
 .heroo .heroo-bg {
     position: relative;
-    width: 100%;
     object-fit: cover;
     z-index: 1000;
     height: 100vh;
-    min-width: 100%;
-    min-height: 100%;
     right: 50%;
     transform: translate(50%, 0);
     bottom: 1px;
 }
 
 .heroo .formm {
+    position: relative;
     background-color: white;
-    width: 600px;
-    right: 0;
-    position: absolute;
     z-index: 1008;
-    margin-top: -90rem;
-    padding: 30px 20px;
-    margin-right: 120rem;
     border-radius: 20px;
     text-align: center;
+    margin-top: -800px;
+    width: fit-content;
+    padding: 20px;
+    margin-left: 50px;
 }
 
 .heroo .formm form {
@@ -92,7 +70,7 @@ body {
 }
 
 .heroo .formm form input {
-    width: 50rem;
+    width: 500px;
     margin-bottom: 25px;
     padding: 10px 10px;
     border-radius: 5px;
@@ -141,25 +119,25 @@ body {
 
 .heroo .formm .hr1 {
     border: 1px solid #adadad49;
-    width: 12.5rem;
-    margin-left: 20px;
+    width: 100px;
+    margin-left: 50px;
     margin-top: -20px;
     margin-bottom: 20px;
 }
 
 .heroo .formm .hr2 {
     border: 1px solid #adadad49;
-    width: 12.5rem;
-    margin-left: 40rem;
+    width: 100px;
+    margin-left: 350px;
     margin-top: -22px;
     margin-bottom: 22px;
 }
 
 .heroo .curves {
-    position: absolute;
+    position: relative;
     z-index: 1008;
-    width: 101%;
-    margin-top: -77px;
+    width: 100%;
+    margin-top: 250px;
 }
 
 /* -----------------section 2---------------- */
@@ -167,44 +145,32 @@ body {
 .sec2 h2 {
     text-align: center;
     margin-top: 40px;
-    padding-left: 25rem;
-    padding-right: 25rem;
+    padding-left: 450px;
+    padding-right: 250px;
 }
 
 .sec2 .title {
     text-align: center;
     margin-top: 20px;
-    padding-left: 26.5rem;
-    padding-right: 26.5rem;
+    padding-left: 450px;
+    padding-right: 265px;
     font-weight: 500;
     margin-bottom: 20px;
     margin-top: 10px;
 }
-
-/* ---------------card3-------------- */
-
-.card-3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* ---------------card lkg------------ */
 
 .sec2 .card-lkg {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 4rem;
     background-color: #f2f2f2;
     border-radius: 10px;
-    padding: 20px 10px;
     box-shadow: #75757571 0px 10px 20px 0px;
     position: relative;
-    width: calc(100% / 2);
-    margin-right: 1.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 
@@ -227,9 +193,8 @@ body {
 }
 
 .sec2 .card-lkg .img img{
-    width: 25rem;
-    height: 15rem;
-
+    width: 250px;
+    height: 150px;
 }
 
 .sec2 .card-lkg .text{
@@ -273,10 +238,7 @@ body {
 /* -----------------sec3-------------- */
  
 .sec3{
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-top: 60px;
 }
 
 .sec3 h1{
@@ -286,61 +248,46 @@ body {
     margin-bottom: 50px;
 }
 
-.sec3 .advantage{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .sec3 .advantage {
     text-align: center;
     color: #333333;
     font-size: 28px;
+    margin-bottom: 50px;
 }
 
 .sec3 .advantage .advantage-1 img{
-    width: 19rem; 
+    width: 250px; 
     margin-bottom: 20px;
 }
 
-/* ---------------sec4----------------- */
-
-.sec4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 .sec4 h1{
-    font-size: 2.2rem;
+    font-size: 30px;
     color: #333333;
     text-align: center;
     margin-bottom: 3rem;
 }
 
 .sec4 .rating, .parents-review{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.sec4 .rating .download, .star-rating, .cities, .minutes{
+.sec4 .rating .download {
     margin-left: 5rem;
     margin-right: 5rem;
     text-align: center;
 }
 
-.sec4 .rating .download img, .star-rating img, .cities img, .minutes img{
-    width: 2.8rem;
+.sec4 .rating .download img {
+    width: 80px;
 }
 
-.sec4 .rating .download h2, .star-rating h2, .cities h2, .minutes h2{
+.sec4 .rating .download h2{
     color: purple;
 }
 
-.sec4 .rating .download p, .star-rating p, .cities p, .minutes p{
+.sec4 .rating .download p {
     color: #333333;
 }
 
@@ -385,24 +332,31 @@ body {
     cursor: pointer;
 }
 
-.sec4 button{
+.sec4 .button-reviews {
     padding: 10px 30px;
     font-size: 15px;
     font-weight: 600;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
     border-radius: 50px;
     border: none;
     background: linear-gradient(135deg, #5e70ff, #8b40ff);
     color: white;
     cursor: pointer;
+    margin-left: 500px;
+    
 }
 
-.sec4 button ion-icon{
+.sec4 .button-reviews ion-icon{
     font-size: 20px;
     font-weight: 1000;
     margin-bottom: -5px;
     margin-left: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50px;
 }
 
 .carousel-box {
@@ -414,12 +368,11 @@ body {
     font-weight: 500;
     margin-top: 45px;
     text-align: center;
-  }
+}
 /* ------------footer----------- */
 
 footer img{
     z-index: 1008;
-    width: 103%;
 }
 
 footer .india-course{
@@ -497,32 +450,8 @@ footer .bottom .copyright{
     margin-top: 10px;
 }
 
-/* carousel */
-#quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 30px;
-    text-align:center;
-}
-/* indicator position */
-#quote-carousel .carousel-indicators {
-right: 50%;
-top: auto;
-bottom: -10px;
-margin-right: -19px;
-    color:#60dfe5;
-}
-/* indicator color */
-#quote-carousel .carousel-indicators li {
-background: #333333;
-    height:4px;
-width:50px;
-}
-/* active indicator */
-#quote-carousel .carousel-indicators .active {
-background: #60dfe5;
-height:4x;
-width:50px;
-margin-bottom:1px;
+.carousel-card {
+    text-align: center;
 }
 
 
@@ -767,32 +696,32 @@ color:white;
 background:#212529;
 }
 
-@media only screen and (max-width: 480px) {
-    /* CSS rules for smartphones in portrait orientation go here */
-    .nav-bar .logo img {
-        width: 4.5rem;
-        margin-right: 0px;
+@media only screen and (max-width: 414px) {
+    /* CSS rules for smartphones in small portrait orientation go here */
+    .heroo .heroo-bg {
+        width: -webkit-fill-available;
     }
     .heroo .formm {
-        width: 290px;
-        margin-top: -70rem;
+        width: 230px;
         padding: 20px 10px;
-        margin-right: 6rem;
         border-radius: 20px;
+        height: 560px;
+        margin-top: -650px;
     }
     .heroo .formm form input {
-        width: 25rem;
+        width: 200px;
     }
     .heroo .formm .hr1 {
-        width: 2rem;
+        width: 20px;
+        margin-left: 10px;
     }
     .heroo .formm .hr2 {
-        width: 2rem;
-        margin-left: 23rem;
+        width: 20px;
+        margin-left: 180px;
     }
     .heroo .curves {
-        width: 101%;
-        margin-top: -16px;
+        width: 100%;
+        margin-top: 75px;
     }
     .sec2 h2 {
         padding-left: 2rem;
@@ -810,20 +739,21 @@ background:#212529;
     }
     .sec2 .card-lkg {
         flex-direction: column;
-        margin-left: 2rem;
+        margin-left: 20px;
         width: 90%;
-        margin-right: 1.5rem;
+        margin-right: 15px;
     }
     .sec2 .card-lkg .img {
         margin-bottom: 0rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     .sec2 .card-lkg .text {
         margin-top: 1rem;
     }
     .sec2 .card-lkg .text button {
-        margin-left: 2rem;
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
     .sec3 .advantage {
         flex-direction: column;
@@ -831,6 +761,9 @@ background:#212529;
     .sec3 .advantage p{
         font-size: medium;
         margin-bottom: 2rem;
+    }
+    .sec4 .button-reviews {
+        margin-left: 50px;
     }
     .sec4 .rating, .parents-review {
         flex-direction: column;
@@ -870,16 +803,139 @@ background:#212529;
     footer .india-course .company-follow .follow a{
         margin: 2px;
     }
-    .contact_info_container {
+    .contact_info_item {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .input_field {
+        width: 250px;
+    }
+    .about-title h1 {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 664px) and (orientation: portrait) {
+    /* CSS rules for smartphones in portrait orientation go here */
+    .heroo .heroo-bg {
+        width: -webkit-fill-available;
+    }
+    .heroo .formm {
+        width: 330px;
+        padding: 20px 10px;
+        margin-right: 60px;
+        border-radius: 20px;
+        margin-top: -650px;
+    }
+    .heroo .formm form input {
+        width: 300px;
+    }
+    .heroo .formm .hr1 {
+        width: 50px;
+        margin-left: 10px;
+    }
+    .heroo .formm .hr2 {
+        width: 50px;
+        margin-left: 250px;
+    }
+    .heroo .curves {
+        width: 100%;
+        margin-top: 140px;
+    }
+    .sec2 h2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .sec2 .title {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .card-3 {
         flex-direction: column;
+    }
+    .sec2 .card-lkg {
+        flex-direction: column;
+        margin-left: 20px;
+        width: 90%;
+        margin-right: 15px;
+    }
+    .sec2 .card-lkg .img {
+        margin-bottom: 0rem;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .sec2 .card-lkg .text {
+        margin-top: 1rem;
+    }
+    .sec2 .card-lkg .text button {
+        margin-left: 2rem;
+    }
+    .sec3 .advantage {
+        flex-direction: column;
+      }
+    .sec3 .advantage p{
+        font-size: medium;
+        margin-bottom: 2rem;
+    }
+    .sec4 .button-reviews {
+        margin-left: 50px;
+    }
+    .sec4 .rating, .parents-review {
+        flex-direction: column;
+    }
+    .sec4 .rating .download, .star-rating, .cities, .minutes {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .sec4 .rating .download img {
+        width: 10rem;
+    }
+    .sec4 .rating .download p {
+        padding: 10px;
+    }
+    footer .india-course {
+        padding-left: 1rem;
+    }
+    footer .bottom {
+        padding: 1px 1rem;
+        font-size: 12px;
+      }
+    footer .bottom .copyright {
+    margin-top: 0px;
+    }
+    #quote-carousel .carousel-indicators {
+    bottom: -40px;
+    }
+    #quote-carousel .carousel-indicators li {
+    height:5px;
+    width:5px;
+    }
+    #quote-carousel .carousel-indicators .active {
+    height:2x;
+    width:5px;
+    margin-bottom:0px;
+    }
+    footer .india-course .company-follow .follow a{
+        margin: 2px;
+    }
+    .contact_info_item {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .input_field {
+        width: 250px;
     }
   }
 
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 767px)  and (orientation: landscape){
 /* CSS rules for smartphones in landscape orientation go here */
     .heroo .heroo-bg {
         height: 170vh;
+        width: -webkit-fill-available;
     }
     .nav-bar .logo img {
         width: 4.5rem;
@@ -887,20 +943,20 @@ background:#212529;
     }
     .heroo .formm {
         width: 600px;
-        margin-top: -60rem;
+        margin-top: -600px;
         padding: 20px 10px;
-        margin-right: 8rem;
+        margin-right: 80px;
         height: 500px;
     }
     .heroo .formm form input {
         width: 34rem;
     }
     .heroo .formm .hr2 {
-        margin-left: 46rem;
+        margin-left: 450px;
     }
     .heroo .curves {
         width: 100%;
-        margin-top: -28px;
+        margin-top: 80px;
     }
     .sec2 h2 {
         padding-left: 5rem;
@@ -940,6 +996,9 @@ background:#212529;
         font-size: medium;
         margin-bottom: 2rem;
     }
+    .sec4 .button-reviews {
+        margin-left: 100px;
+    }
     .sec4 .rating, .parents-review {
         flex-direction: column;
     }
@@ -975,34 +1034,43 @@ background:#212529;
     width:5px;
     margin-bottom:0px;
     }
+    .contact_info_item {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .input_field {
+        width: 250px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
 /* CSS rules for tablets in portrait orientation go here */
+    .heroo .heroo-bg {
+        width: -webkit-fill-available;
+    }
     .nav-bar .logo img {
-        width: 6rem;
+        width: 60px;
         margin-right: 250px;
     }
     .heroo .formm {
         width: 500px;
-        margin-top: -90rem;
         padding: 20px 10px;
-        margin-right: 20rem;
+        margin-right: 200px;
         border-radius: 20px;
     }
     .heroo .formm form input {
-        width: 40rem;
+        width: 400px;
     }
     .heroo .formm .hr1 {
-        width: 9rem;
+        width: 4rem;
     }
     .heroo .formm .hr2 {
-        width: 9rem;
-        margin-left: 36rem;
+        width: 4rem;
+        margin-left: 350px;
     }
     .heroo .curves {
         width: 100%;
-        margin-top: -35px;
+        margin-top: 280px;
     }
     .sec2 h2 {
         padding-left: 2rem;
@@ -1045,6 +1113,9 @@ background:#212529;
     .sec4 .rating, .parents-review {
         flex-direction: column;
     }
+    .sec4 .button-reviews {
+        margin-left: 200px;
+    }
     .sec4 .rating .download, .star-rating, .cities, .minutes {
         margin-left: 2rem;
         margin-right: 2rem;
@@ -1065,34 +1136,45 @@ background:#212529;
     footer .bottom .copyright {
     margin-top: 0px;
     }
+    .contact_info_item {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .input_field {
+        width: 250px;
+    }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
+@media only screen and (min-width: 767px) and (max-width: 1600px) and (orientation: landscape) {
 /* CSS rules for tablets in landscape orientation go here */
 .nav-bar .logo img {
-    width: 8rem;
+    width: 80px;
     margin-right: 550px;
+}
+.heroo .heroo-bg {
+    height: 200vh;
+    width: -webkit-fill-available;
 }
 .heroo .formm {
     width: 500px;
-    margin-top: -70rem;
+    margin-top: -800px;
     padding: 20px 10px;
     margin-right: 40rem;
     border-radius: 20px;
 }
 .heroo .formm form input {
-    width: 45rem;
+    width: 450px;
 }
 .heroo .formm .hr1 {
-    width: 9rem;
+    width: 90px;
 }
 .heroo .formm .hr2 {
-    width: 9rem;
-    margin-left: 37rem;
+    width: 90px;
+    margin-left: 350px;
 }
 .heroo .curves {
     width: 100%;
-    margin-top: -45px;
+    margin-top: 265px;
 }
 .sec2 h2 {
     padding-left: 2rem;
@@ -1110,9 +1192,9 @@ background:#212529;
 }
 .sec2 .card-lkg {
     flex-direction: column;
-    margin-left: 2rem;
+    margin-left: 20px;
     width: 90%;
-    margin-right: 1.5rem;
+    margin-right: 15px;
 }
 .sec2 .card-lkg .img {
     margin-bottom: 0rem;
@@ -1123,7 +1205,8 @@ background:#212529;
     margin-top: 1rem;
 }
 .sec2 .card-lkg .text button {
-    margin-left: 2rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 .sec3 .advantage {
     flex-direction: row;
@@ -1131,6 +1214,9 @@ background:#212529;
 .sec3 .advantage p{
     font-size: medium;
     margin-bottom: 2rem;
+}
+.sec4 .button-reviews {
+    margin-left: 200px;
 }
 .sec4 .rating, .parents-review {
     flex-direction: row;
@@ -1154,5 +1240,12 @@ footer .bottom {
 }
 footer .bottom .copyright {
 margin-top: 0px;
+}
+.contact_info_item {
+    width: 300px;
+    margin-bottom: 20px;
+}
+.input_field {
+    width: 250px;
 }
 }
