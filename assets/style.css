@@ -51,7 +51,7 @@ html {
     right: 50%;
     transform: translate(50%, 0);
     bottom: 1px;
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
 .heroo .formm {
