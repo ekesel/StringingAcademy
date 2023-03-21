@@ -51,6 +51,7 @@ html {
     right: 50%;
     transform: translate(50%, 0);
     bottom: 1px;
+    width: -webkit-fill-available;
 }
 
 .heroo .formm {
@@ -59,7 +60,7 @@ html {
     z-index: 1008;
     border-radius: 20px;
     text-align: center;
-    margin-top: -800px;
+    margin-top: -700px;
     width: fit-content;
     padding: 20px;
     margin-left: 50px;
@@ -137,7 +138,7 @@ html {
     position: relative;
     z-index: 1008;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 160px;
 }
 
 /* -----------------section 2---------------- */
@@ -1145,7 +1146,7 @@ background:#212529;
     }
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1600px) and (orientation: landscape) {
+@media only screen and (min-width: 767px) and (max-width: 1000px) and (orientation: landscape) {
 /* CSS rules for tablets in landscape orientation go here */
 .nav-bar .logo img {
     width: 80px;
