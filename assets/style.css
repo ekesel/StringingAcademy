@@ -141,6 +141,10 @@ html {
     margin-top: 160px;
 }
 
+.curve { 
+    margin-top: 430px !important;
+}
+
 /* -----------------section 2---------------- */
 
 .sec2 h2 {
@@ -682,28 +686,22 @@ footer .bottom .copyright{
     font-size: 40px;
 }
 
-.card1:hover {
-    background:#ae71b3;
-    border:1px solid #00ffb6;
+.card {
+    background: #ffb933 !important;
+    border-radius: 30px !important;
 }
 
-.card1:hover .list-group-item{
-background:#ae71b3 !important
-}
-
-
-.card:hover .btn-outline-dark{
-color:white;
-background:#212529;
+.card:hover {
+    background: #bf7fbf !important;
 }
 
 @media only screen and (max-width: 414px) {
     /* CSS rules for smartphones in small portrait orientation go here */
     .heroo .heroo-bg {
-        width: -webkit-fill-available;
+        width: 100%;
     }
     .heroo .formm {
-        width: 230px;
+        width: 300px;
         padding: 20px 10px;
         border-radius: 20px;
         height: 560px;
@@ -718,7 +716,7 @@ background:#212529;
     }
     .heroo .formm .hr2 {
         width: 20px;
-        margin-left: 180px;
+        margin-left: 250px;
     }
     .heroo .curves {
         width: 100%;
@@ -769,9 +767,8 @@ background:#212529;
     .sec4 .rating, .parents-review {
         flex-direction: column;
     }
-    .sec4 .rating .download, .star-rating, .cities, .minutes {
-        margin-left: 2rem;
-        margin-right: 2rem;
+    .sec4 .rating .download {
+        margin-left: 0.3rem;
     }
     .sec4 .rating .download img {
         width: 10rem;
@@ -819,7 +816,7 @@ background:#212529;
 @media only screen and (min-width: 415px) and (max-width: 664px) and (orientation: portrait) {
     /* CSS rules for smartphones in portrait orientation go here */
     .heroo .heroo-bg {
-        width: -webkit-fill-available;
+        width: 100%;
     }
     .heroo .formm {
         width: 330px;
@@ -936,7 +933,7 @@ background:#212529;
 /* CSS rules for smartphones in landscape orientation go here */
     .heroo .heroo-bg {
         height: 170vh;
-        width: -webkit-fill-available;
+        width: 100%;
     }
     .nav-bar .logo img {
         width: 4.5rem;
@@ -1047,7 +1044,7 @@ background:#212529;
 @media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
 /* CSS rules for tablets in portrait orientation go here */
     .heroo .heroo-bg {
-        width: -webkit-fill-available;
+        width: 100%;
     }
     .nav-bar .logo img {
         width: 60px;
@@ -1154,7 +1151,7 @@ background:#212529;
 }
 .heroo .heroo-bg {
     height: 200vh;
-    width: -webkit-fill-available;
+    width: 100%;
 }
 .heroo .formm {
     width: 500px;
