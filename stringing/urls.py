@@ -27,6 +27,10 @@ urlpatterns = [
     path('pricing', pricing, name='pricing'),
 ]
 
+admin.site.site_header = "Stringing Academy"
+admin.site.site_title = "Stringing | Admin"
+admin.site.index_title = "Admin Eke Welcomes You"
+
 
 if settings.DEBUG:  
     urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)  
