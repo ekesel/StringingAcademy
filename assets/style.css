@@ -588,6 +588,7 @@ footer .bottom .copyright{
 {
     width: 100%;
     padding-top: 70px;
+    margin-top: 300px;
 }
 .contact_info_item
 {
@@ -1320,7 +1321,7 @@ footer .bottom .copyright{
     }
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1180px) and (orientation: landscape) {
+@media only screen and (min-width: 767px) and (max-width: 1440px) and (orientation: landscape) {
 /* CSS rules for tablets in landscape orientation go here */
 .front-section {
     display: none;
