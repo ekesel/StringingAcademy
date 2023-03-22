@@ -24,33 +24,36 @@
 </head>
 
 <body>
-    <nav class='nav-bar'>
-        <div class='container'>
-            <div class="row">
-                <div class="logo col-8">
-                    <a href="{% url 'home' %}">
-                        <img src="{% static 'logo_white.png' %}" alt="">
-                    </a>
-                </div>
-                <div class="menu col-4">
-                    <div class='container'>
-                        <div class='row'>
-                            <a class='col' href="{% url 'home' %}">Home</a>
-                            <a class='col' href="{% url 'contact' %}">Contact</a>
-                            <a class='col' href="{% url 'about' %}">About</a>
-                            <a class='col' href="{% url 'pricing' %}">Pricing</a>
-                            <a class='col' href="{{calling_number}}">
-                            <img src="{% static 'call.svg' %}" alt="" class="col call">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-sm nav-bar navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo p-4" href="{% url 'home' %}"><img src="{% static 'logo_white.png' %}" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end me-5" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'pricing' %}">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="{{calling_number}}"><img src="{% static 'call.svg' %}" alt="" class="call"></a>
+                  </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <section class="heroo" id="lead_form">
-        <img src="{% static 'bg.svg' %}" alt="" class="heroo-bg">
+        <img src="{% static 'bg.png' %}" alt="" class="heroo-bg">
         <div class="formm">
             <p class="top">Book your Free Class</p>
             <p class="middle">Learn from the best teachers</p>
@@ -76,6 +79,33 @@
             {% endif %}
         </div>
         <img src="{% static 'curves.svg' %}" alt="" class="curves{% if response %} curve{%endif%}">
+    </section>
+
+    <section class='front-section'>
+        <div class='container'>
+            <div class='row'>
+                <a href='#price-contain'>
+                <div class='pricing-text'>
+                    CONTACT
+                </div>
+                <div class='front-arrow'>
+                    <img src="{% static 'arrow.png' %}" >
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class='front-mobile-section'>
+        <div class='container'>
+            <div class='row'>
+                <a href='#bannerid'>
+                    <div class='small-mobile-content'>
+                        CONTACT
+                    </div>
+                </a>
+            </div>
+        </div>
     </section>
 
     <div class="contact_info">

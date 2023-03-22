@@ -41,6 +41,12 @@ def index(request):
 	params['terms_policy'] = config.TERMS_POLICY
 	params['instagram_link'] = config.INSTAGRAM_LINK
 	params['facebook_link'] = config.FACEBOOK_LINK
+	params['first_line'] = config.BANNER_FIRST_LINE
+	params['second_line'] = config.BANNER_SECOND_LINE
+	params['third_line'] = config.BANNER_THIRD_LINE
+	params['fourth_line'] = config.BANNER_FOURTH_LINE
+	params['fifth_line'] = config.BANNER_FIFTH_LINE
+	params['last_line'] = config.BANNER_SIXTH_LINE 
 	
 	return render(request, 'index.html', params)
 
@@ -83,7 +89,7 @@ def contact(request):
 		params['meta_keywords'] = page_config.meta_keywords
 		params['meta_author'] = page_config.meta_author
 		params['meta_description'] = page_config.meta_description
-		
+		params['calling_number'] = "tel:+91" + page_config.calling_number
 	return render(request, 'contact.html', params)
 
 def about(request):
@@ -113,6 +119,7 @@ def about(request):
 		params['meta_keywords'] = page_config.meta_keywords
 		params['meta_author'] = page_config.meta_author
 		params['meta_description'] = page_config.meta_description
+		params['calling_number'] = "tel:+91" + page_config.calling_number
 		
 	return render(request, 'about.html', params)
 
@@ -132,5 +139,6 @@ def pricing(request):
 		params['meta_keywords'] = page_config.meta_keywords
 		params['meta_author'] = page_config.meta_author
 		params['meta_description'] = page_config.meta_description
+		params['calling_number'] = "tel:+91" + page_config.calling_number
 		
 	return render(request, 'pricing.html', params)

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,27 +13,29 @@ html {
 /* ---------nav-bar----------- */
 
 .nav-bar {
-    background: #5e096d;
+    background: #610f70;
     padding-top: 20px;
 }
 
-.nav-bar .logo {
-    display: block;
+
+.nav-elements {
+    justify-content: end;
+    margin-right: 200px;
 }
 
-.nav-bar .logo img {
+.logo img {
     width: 150px;
     cursor: pointer;
 }
 
-.nav-bar .menu a {
-    color: #ffc846;
+.nav-bar a {
+    color: #ffc846 !important;
     text-decoration: none;
     cursor: pointer;
     font-size: 14px;
 }
 
-.nav-bar .menu .call {
+.nav-bar .call {
     background: #ffc846;
     border-radius: 50px;
     cursor: pointer;
@@ -41,6 +44,10 @@ html {
 }
 
 /* --------------heroo------------- */
+
+.front-mobile-section {
+    display: none;
+}
 
 
 .heroo .heroo-bg {
@@ -138,21 +145,82 @@ html {
     position: relative;
     z-index: 1008;
     width: 100%;
-    margin-top: 160px;
+    margin-top: 140px;
 }
 
 .curve { 
     margin-top: 430px !important;
 }
 
+.front-section {
+    z-index: 1008;
+    position: relative;
+    margin-top: -700px;
+    margin-left: 1000px;
+    display: block;
+}
+
+.front-section a {
+    text-decoration: none;
+}
+
+.front-text-bigger-content {
+    font-family: 'Ruda', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: -120px;
+}
+.pricing-text {
+    font-family: 'Ruda', sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: -120px;
+}
+
+.small-text {
+    font-size: 20px;
+}
+
+.front-arrow {
+    margin-left: 140px;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 /* -----------------section 2---------------- */
 
+.sec2 {
+    margin-top: 150px;
+}
 .sec2 h2 {
     text-align: center;
     margin-top: 40px;
     padding-left: 450px;
     padding-right: 250px;
 }
+
 
 .sec2 .title {
     text-align: center;
@@ -358,6 +426,9 @@ html {
     margin-bottom: -5px;
     margin-left: 10px;
 }
+.carousel {
+    margin-top: 50px;
+}
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: black;
@@ -381,7 +452,7 @@ footer img{
 }
 
 footer .india-course{
-    background: #5e096d;
+    background: #610f70;
     display: flex;
     justify-content: space-between;
     margin-top: -10px;
@@ -432,7 +503,7 @@ footer hr{
 }
 
 footer .bottom{
-    background: #5e096d;
+    background: #610f70;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -680,6 +751,7 @@ footer .bottom .copyright{
 .pricing-header {
     align-items: center;
     text-align: center;
+    margin-top: 330px;
 }
 
 .pricing-header h4 {
@@ -695,8 +767,28 @@ footer .bottom .copyright{
     background: #bf7fbf !important;
 }
 
+.about-section {
+    margin-top: 300px;
+}
+
 @media only screen and (max-width: 414px) {
     /* CSS rules for smartphones in small portrait orientation go here */
+    .front-mobile-section {
+        margin-top: -700px;
+        z-index: 1008;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .front-mobile-section a{
+        text-decoration: none;
+    }
+    .small-mobile-content {
+        font-family: 'Ruda', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
     .heroo .heroo-bg {
         width: 100%;
     }
@@ -704,8 +796,8 @@ footer .bottom .copyright{
         width: 300px;
         padding: 20px 10px;
         border-radius: 20px;
-        height: 560px;
-        margin-top: -650px;
+        height: 500px;
+        margin-top: -550px;
     }
     .heroo .formm form input {
         width: 200px;
@@ -720,7 +812,14 @@ footer .bottom .copyright{
     }
     .heroo .curves {
         width: 100%;
-        margin-top: 75px;
+        margin-top: 35px;
+    }
+
+    .front-section {
+        display: none;
+    }
+    .sec2 {
+        margin-top: 650px;
     }
     .sec2 h2 {
         padding-left: 2rem;
@@ -811,10 +910,29 @@ footer .bottom .copyright{
     .about-title h1 {
         margin-top: 50px;
     }
+    .contact_info, .about-section, .pricing-header  {
+        margin-top: 700px;
+    }
 }
 
-@media only screen and (min-width: 415px) and (max-width: 664px) and (orientation: portrait) {
+@media only screen and (min-width: 415px) and (max-width: 767px) and (orientation: portrait) {
     /* CSS rules for smartphones in portrait orientation go here */
+    .front-mobile-section {
+        margin-top: -700px;
+        z-index: 1008;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .front-mobile-section a{
+        text-decoration: none;
+    }
+    .small-mobile-content {
+        font-family: 'Ruda', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
     .heroo .heroo-bg {
         width: 100%;
     }
@@ -823,7 +941,7 @@ footer .bottom .copyright{
         padding: 20px 10px;
         margin-right: 60px;
         border-radius: 20px;
-        margin-top: -650px;
+        margin-top: -550px;
     }
     .heroo .formm form input {
         width: 300px;
@@ -838,7 +956,14 @@ footer .bottom .copyright{
     }
     .heroo .curves {
         width: 100%;
-        margin-top: 140px;
+        margin-top: 35px;
+    }
+
+    .front-section {
+        display: none;
+    }
+    .sec2 {
+        margin-top: 650px;
     }
     .sec2 h2 {
         padding-left: 2rem;
@@ -926,14 +1051,36 @@ footer .bottom .copyright{
     .input_field {
         width: 250px;
     }
+    .contact_info, .about-section, .pricing-header  {
+        margin-top: 700px;
+    }
   }
 
 
 @media only screen and (min-width: 481px) and (max-width: 767px)  and (orientation: landscape){
 /* CSS rules for smartphones in landscape orientation go here */
     .heroo .heroo-bg {
-        height: 170vh;
+        height: 200vh;
         width: 100%;
+    }
+    .front-section {
+        display: none;
+    }
+    .front-mobile-section {
+        margin-top: -750px;
+        z-index: 1008;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .front-mobile-section a{
+        text-decoration: none;
+    }
+    .small-mobile-content {
+        font-family: 'Ruda', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
     }
     .nav-bar .logo img {
         width: 4.5rem;
@@ -955,6 +1102,9 @@ footer .bottom .copyright{
     .heroo .curves {
         width: 100%;
         margin-top: 80px;
+    }
+    .sec2 {
+        margin-top: 700px;
     }
     .sec2 h2 {
         padding-left: 5rem;
@@ -985,7 +1135,8 @@ footer .bottom .copyright{
         margin-top: 1rem;
     }
     .sec2 .card-lkg .text button {
-        margin-left: 2rem;
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
     .sec3 .advantage {
         flex-direction: column;
@@ -1041,8 +1192,30 @@ footer .bottom .copyright{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 /* CSS rules for tablets in portrait orientation go here */
+    .front-mobile-section {
+        margin-top: -900px;
+        z-index: 1008;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .front-mobile-section a{
+        text-decoration: none;
+    }
+    .small-mobile-content {
+        font-family: 'Ruda', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+    }
+    .front-section {
+        display: none;
+    }
+    .sec2 {
+        margin-top: 800px;
+    }
     .heroo .heroo-bg {
         width: 100%;
     }
@@ -1068,7 +1241,7 @@ footer .bottom .copyright{
     }
     .heroo .curves {
         width: 100%;
-        margin-top: 280px;
+        margin-top: 175px;
     }
     .sec2 h2 {
         padding-left: 2rem;
@@ -1099,7 +1272,8 @@ footer .bottom .copyright{
         margin-top: 1rem;
     }
     .sec2 .card-lkg .text button {
-        margin-left: 2rem;
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
     .sec3 .advantage {
         flex-direction: column;
@@ -1141,13 +1315,38 @@ footer .bottom .copyright{
     .input_field {
         width: 250px;
     }
+    .contact_info, .about-section, .pricing-header  {
+        margin-top: 900px;
+    }
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1000px) and (orientation: landscape) {
+@media only screen and (min-width: 767px) and (max-width: 1180px) and (orientation: landscape) {
 /* CSS rules for tablets in landscape orientation go here */
+.front-section {
+    display: none;
+}
+.front-mobile-section {
+    margin-top: -700px;
+    z-index: 1008;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-left: 600px;
+}
+.front-mobile-section a{
+    text-decoration: none;
+}
+.small-mobile-content {
+    font-family: 'Ruda', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.contact_info, .about-section, .pricing-header  {
+    margin-top: 700px;
+}
 .nav-bar .logo img {
     width: 80px;
-    margin-right: 550px;
 }
 .heroo .heroo-bg {
     height: 200vh;
@@ -1172,7 +1371,10 @@ footer .bottom .copyright{
 }
 .heroo .curves {
     width: 100%;
-    margin-top: 265px;
+    margin-top: 267px;
+}
+.sec2 {
+    margin-top: 660px;
 }
 .sec2 h2 {
     padding-left: 2rem;

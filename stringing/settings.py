@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(^q$#9xi8*53e=u-ifa7zztgo%gmrdc=!j91#y5$zqy)bcl_wk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -158,11 +158,18 @@ CONSTANCE_CONFIG = {
     'CONTACT_PHONE': ('', 'Phone in Contact Page'),
     'CONTACT_EMAIL': ('', 'Email in Contact Page'),
     'CONTACT_ADDRESS': ('', 'Address in Contact Page'),
+    'BANNER_FIRST_LINE': ('21 DAYS GUITAR', 'The first line of banner'),
+    'BANNER_SECOND_LINE': ('WORKSHOP','Second line of banner'),
+    'BANNER_THIRD_LINE': ('IN AZAMGARH', 'Third line of banner'),
+    'BANNER_FOURTH_LINE': ('FRIDAY, 7 APRIL 2023', 'Fourth small line of banner'),
+    'BANNER_FIFTH_LINE': ('Inside Tiny Tots School, Raidopur', 'Fifth small line of banner'),
+    'BANNER_SIXTH_LINE': ('Register Below!', 'Last line of banner')
 }
 
 CONSTANCE_CONFIG_FIELDSETS = {
     'Policies': ('PRIVACY_POLICY', 'CANCELLATION_POLICY', 'TERMS_POLICY'),
     'AboutUsPage': ('ABOUT_US_HEADER','ABOUT_US_CONTENT','ABOUT_US_SUB_HEADER'),   
     'FollowLinks' : ('INSTAGRAM_LINK', 'FACEBOOK_LINK'),
-    'ContactPage': ('CONTACT_PHONE', 'CONTACT_EMAIL', 'CONTACT_ADDRESS')
+    'ContactPage': ('CONTACT_PHONE', 'CONTACT_EMAIL', 'CONTACT_ADDRESS'),
+    'HomePage': ('BANNER_FIRST_LINE','BANNER_SECOND_LINE','BANNER_THIRD_LINE','BANNER_FOURTH_LINE','BANNER_FIFTH_LINE','BANNER_SIXTH_LINE')
 }
