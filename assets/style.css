@@ -67,7 +67,7 @@ html {
     z-index: 1008;
     border-radius: 20px;
     text-align: center;
-    margin-top: -700px;
+    margin-top: -690px;
     width: fit-content;
     padding: 20px;
     margin-left: 50px;
@@ -145,7 +145,7 @@ html {
     position: relative;
     z-index: 1008;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 130px;
 }
 
 .curve { 
@@ -156,7 +156,7 @@ html {
     z-index: 1008;
     position: relative;
     margin-top: -700px;
-    margin-left: 900px;
+    margin-left: 850px;
     display: block;
 }
 
@@ -173,7 +173,7 @@ html {
 }
 .pricing-text {
     font-family: 'Ruda', sans-serif;
-    font-size: 120px;
+    font-size: 110px;
     font-weight: bold;
     color: white;
     margin-bottom: -120px;
@@ -185,6 +185,7 @@ html {
 
 .front-arrow {
     margin-left: 140px;
+    margin-top: 60px;
 }
 
 .typewriter {
@@ -772,6 +773,10 @@ footer .bottom .copyright{
     margin-top: 300px;
 }
 
+.highlighter {
+    background-color: #bf7fbf;
+}
+
 @media only screen and (max-width: 414px) {
     /* CSS rules for smartphones in small portrait orientation go here */
     .front-mobile-section {
@@ -789,6 +794,9 @@ footer .bottom .copyright{
         font-size: 15px;
         font-weight: bold;
         color: white;
+    }
+    .other-page {
+        font-size: 50px;
     }
     .heroo .heroo-bg {
         width: 100%;
@@ -918,6 +926,9 @@ footer .bottom .copyright{
 
 @media only screen and (min-width: 415px) and (max-width: 767px) and (orientation: portrait) {
     /* CSS rules for smartphones in portrait orientation go here */
+    .other-page {
+        font-size: 50px !important;
+    }
     .front-mobile-section {
         margin-top: -700px;
         z-index: 1008;
@@ -1060,6 +1071,9 @@ footer .bottom .copyright{
 
 @media only screen and (min-width: 481px) and (max-width: 767px)  and (orientation: landscape){
 /* CSS rules for smartphones in landscape orientation go here */
+    .other-page {
+        font-size: 50px !important;
+    }
     .heroo .heroo-bg {
         height: 200vh;
         width: 100%;
@@ -1195,6 +1209,9 @@ footer .bottom .copyright{
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 /* CSS rules for tablets in portrait orientation go here */
+    .other-page {
+        font-size: 50px !important;
+    }
     .front-mobile-section {
         margin-top: -900px;
         z-index: 1008;
@@ -1323,6 +1340,9 @@ footer .bottom .copyright{
 
 @media only screen and (min-width: 767px) and (max-width: 1180px) and (orientation: landscape) {
 /* CSS rules for tablets in landscape orientation go here */
+    .other-page {
+        font-size: 50px !important;
+    }
 .front-section {
     display: none;
 }
