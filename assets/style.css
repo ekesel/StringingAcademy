@@ -145,7 +145,7 @@ html {
     position: relative;
     z-index: 1008;
     width: 100%;
-    margin-top: 140px;
+    margin-top: 150px;
 }
 
 .curve { 
@@ -156,7 +156,7 @@ html {
     z-index: 1008;
     position: relative;
     margin-top: -700px;
-    margin-left: 1000px;
+    margin-left: 900px;
     display: block;
 }
 
@@ -166,7 +166,7 @@ html {
 
 .front-text-bigger-content {
     font-family: 'Ruda', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     color: white;
     margin-bottom: -120px;
@@ -204,11 +204,11 @@ html {
     to { width: 100% }
   }
   
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange; }
+}
 /* -----------------section 2---------------- */
 
 .sec2 {
@@ -1321,7 +1321,7 @@ footer .bottom .copyright{
     }
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1440px) and (orientation: landscape) {
+@media only screen and (min-width: 767px) and (max-width: 1180px) and (orientation: landscape) {
 /* CSS rules for tablets in landscape orientation go here */
 .front-section {
     display: none;
