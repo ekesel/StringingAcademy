@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import PageConfig, Leads, Banners, Testimonials, Contact, Course
 from django.core.mail import mail_admins
 from constance import config
+from django.shortcuts import redirect
 
 
 def index(request):
@@ -142,3 +143,15 @@ def pricing(request):
 		params['calling_number'] = "tel:+91" + page_config.calling_number
 		
 	return render(request, 'pricing.html', params)
+
+def privacy(request):
+	return redirect("https://merchant.razorpay.com/policy/LVbGcTyISzngNa/privacy")
+
+def terms(request):
+	return redirect("https://merchant.razorpay.com/policy/LVbGcTyISzngNa/terms")
+
+def cancellation(request):
+	return redirect("https://merchant.razorpay.com/policy/LVbGcTyISzngNa/refund")
+
+def shipping(request):
+	return redirect("https://merchant.razorpay.com/policy/LVbGcTyISzngNa/shipping")

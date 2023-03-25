@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from home.views import index, about, contact, pricing
+from home.views import index, about, contact, pricing, privacy, terms, cancellation, shipping
 from django.conf import settings  
 from django.conf.urls.static import static  
 
@@ -25,6 +25,10 @@ urlpatterns = [
     path('about', about, name='about'),
     path('contact', contact, name='contact'),
     path('pricing', pricing, name='pricing'),
+    path('privacy',privacy,name='privacy'),
+    path('terms', terms,name='terms'),
+    path('cancellation', cancellation, name='cancellation'),
+    path('shipping',shipping,name='shipping')
 ]
 
 admin.site.site_header = "Stringing Academy"
