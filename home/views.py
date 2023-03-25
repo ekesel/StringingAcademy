@@ -2,7 +2,6 @@ from django.shortcuts import render
 from .models import PageConfig, Leads, Banners, Testimonials, Contact, Course
 from django.core.mail import mail_admins
 from constance import config
-from django.shortcuts import redirect
 
 
 def index(request):
@@ -145,13 +144,65 @@ def pricing(request):
 	return render(request, 'pricing.html', params)
 
 def privacy(request):
-	return redirect("https://merchant.razorpay.com/policy/LVbGcTyISzngNa/privacy")
+	page_config = PageConfig.objects.filter(page_name='privacy').last()
+	params = {}
+	params['privacy_policy'] = config.PRIVACY_POLICY
+	params['cancellation_policy'] = config.CANCELLATION_POLICY
+	params['terms_policy'] = config.TERMS_POLICY
+	params['instagram_link'] = config.INSTAGRAM_LINK
+	params['facebook_link'] = config.FACEBOOK_LINK
+	if page_config:
+		params['title'] = page_config.title
+		params['meta_keywords'] = page_config.meta_keywords
+		params['meta_author'] = page_config.meta_author
+		params['meta_description'] = page_config.meta_description
+		params['calling_number'] = "tel:+91" + page_config.calling_number
+	return render(request, 'privacy.html', params)
 
 def terms(request):
-	return redirect("https://merchant.razorpay.com/policy/LVbGcTyISzngNa/terms")
+	page_config = PageConfig.objects.filter(page_name='terms').last()
+	params = {}
+	params['privacy_policy'] = config.PRIVACY_POLICY
+	params['cancellation_policy'] = config.CANCELLATION_POLICY
+	params['terms_policy'] = config.TERMS_POLICY
+	params['instagram_link'] = config.INSTAGRAM_LINK
+	params['facebook_link'] = config.FACEBOOK_LINK
+	if page_config:
+		params['title'] = page_config.title
+		params['meta_keywords'] = page_config.meta_keywords
+		params['meta_author'] = page_config.meta_author
+		params['meta_description'] = page_config.meta_description
+		params['calling_number'] = "tel:+91" + page_config.calling_number
+	return render(request, 'terms.html', params)
 
 def cancellation(request):
-	return redirect("https://merchant.razorpay.com/policy/LVbGcTyISzngNa/refund")
+	page_config = PageConfig.objects.filter(page_name='cancellation').last()
+	params = {}
+	params['privacy_policy'] = config.PRIVACY_POLICY
+	params['cancellation_policy'] = config.CANCELLATION_POLICY
+	params['terms_policy'] = config.TERMS_POLICY
+	params['instagram_link'] = config.INSTAGRAM_LINK
+	params['facebook_link'] = config.FACEBOOK_LINK
+	if page_config:
+		params['title'] = page_config.title
+		params['meta_keywords'] = page_config.meta_keywords
+		params['meta_author'] = page_config.meta_author
+		params['meta_description'] = page_config.meta_description
+		params['calling_number'] = "tel:+91" + page_config.calling_number
+	return render(request, 'cancellation.html', params)
 
 def shipping(request):
-	return redirect("https://merchant.razorpay.com/policy/LVbGcTyISzngNa/shipping")
+	page_config = PageConfig.objects.filter(page_name='shipping').last()
+	params = {}
+	params['privacy_policy'] = config.PRIVACY_POLICY
+	params['cancellation_policy'] = config.CANCELLATION_POLICY
+	params['terms_policy'] = config.TERMS_POLICY
+	params['instagram_link'] = config.INSTAGRAM_LINK
+	params['facebook_link'] = config.FACEBOOK_LINK
+	if page_config:
+		params['title'] = page_config.title
+		params['meta_keywords'] = page_config.meta_keywords
+		params['meta_author'] = page_config.meta_author
+		params['meta_description'] = page_config.meta_description
+		params['calling_number'] = "tel:+91" + page_config.calling_number
+	return render(request, 'shipping.html', params)
