@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+import environ
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(^q$#9xi8*53e=u-ifa7zztgo%gmrdc=!j91#y5$zqy)bcl_wk'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -133,8 +136,8 @@ ADMINS = (('Stringing', 'stringingmusic2023@gmail.com'),)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com' 
-EMAIL_HOST_USER = 'stringingmusic2023@gmail.com'
-EMAIL_HOST_PASSWORD = 'ygziukridaqarzmz'
+EMAIL_HOST_USER = env('EMAIL')
+EMAIL_HOST_PASSWORD = env('PASSWORD')
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = 'Stringing <stringingmusic2023@gmail.com>'
 
